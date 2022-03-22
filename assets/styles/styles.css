@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+}
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+.logo {
+    max-width: 50px;
+    margin: 5px;
+    margin-right: 15px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+nav {
+    max-width: 100%;
+    height: 60px;
+    background-color: rgb(43, 43, 73);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+nav a {
+    color : white;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    color : white;
+    width: 25%;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.capi {
+    font-size: 12px;
+}
+.submenu-hidden{
+    display: none;
+}
+
+  .enonce-img{
+    max-width: 800px;
+  }
+
+  .exo div {
+    margin-bottom: 12px;
+  }
+
+  .exo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color :rgb(39, 68, 150)
+  }
+
+/* exercice 1 */
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 90vw;
+}
+
+/* exercice2 */
+.meteo-info {
+    position: fixed;
+    background-color: aquamarine;
+    height: 60vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+
+}
+
+.image-card {
+    cursor: pointer;
+}
+
+.precipitations, .humidity {
+    width: 400px;
+    background-color: white;
+    height: 15px;
+    border-radius: 200px;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.inner-precip, .inner-humid {
+    background-color: tomato;
+    height: 100%;
+    justify-self: flex-start;
+    transition: all 2s ease-in-out;
+}
+
+.humid-percent, .precip-percent {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    
+}
+
+.precip-container, .humid-container, .vent-container, .temperature {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.temperature div {
+    font-size: 50px;
+}
+
+.precip-container img, .humid-container img, .vent-container img {
+    width: 50px;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: deeppink;
+    opacity: .5;
+    display: none;
+}
+
+.appear {
+    display: flex;
+    flex-direction: column;
+}
+
+.cross {
+    align-self: flex-end;
+    font-size: 30px;
+    cursor: pointer;
+}
